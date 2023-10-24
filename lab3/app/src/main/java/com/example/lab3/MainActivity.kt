@@ -1,12 +1,10 @@
 package com.example.lab3
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import com.example.lab3.R
 
 class MainActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -63,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 else -> {
                     text_win.text = "勝利者\n 平手"
-                    text_show.text = "平手~再來一局？"
+                    text_show.text = "平局~再來一局？"
                 }
             }
         }
